@@ -1,0 +1,7 @@
+﻿  MyOGL.cpp
+  OpenGLrememberProj.cpp
+D:\Download Yanex\Lab1_grafika-main\Lab1_grafika-main\OpenGLrememberProj\OpenGLrememberProj.cpp(149,12): warning C4101: wmEvent: неиспользованная локальная переменная
+D:\Download Yanex\Lab1_grafika-main\Lab1_grafika-main\OpenGLrememberProj\OpenGLrememberProj.cpp(149,6): warning C4101: wmId: неиспользованная локальная переменная
+  Render.cpp
+  Создание кода...
+  OpenGLrememberProj.vcxproj -> D:\Download Yanex\Lab1_grafika-main\Lab1_grafika-main\Debug\OpenGLrememberProj.exe
