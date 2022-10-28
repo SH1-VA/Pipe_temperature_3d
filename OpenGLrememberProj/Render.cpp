@@ -87,13 +87,16 @@ void Render(double delta_time)
     main();
 
     glPointSize(25);
-    glBegin(GL_POINTS);
+    glBegin(GL_QUADS);
     for (int j = 60; j >= 0; j--)
     {
         for (int i = 0; i <= 60; i++)
         {
             glColor3d(temperature[i][j] / 200, 0, 0);
             glVertex3d(i * 0.167, j * 0.167, temperature[i][j] / 40);
+            glVertex3d(i * 0.167 + 0.167, j * 0.167, temperature[i+1][j] / 40);
+            glVertex3d(i * 0.167 + 0.167, j * 0.167 + 0.167, temperature[i+1][j+1] / 40);
+            glVertex3d(i * 0.167, j * 0.167 + 0.167, temperature[i][j+1] / 40);
         }
     }
     glEnd();
