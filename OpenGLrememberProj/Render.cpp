@@ -92,7 +92,7 @@ void Render(double delta_time)
     {
         for (int i = 0; i <= 60; i++)
         {
-            glColor3d(temperature[i][j] / 200, 0, 0);
+            glColor3d(temperature[i][j] / 200, abs(100 - temperature[i][j]) / 200, (200 - temperature[i][j]) / 200);
             glVertex3d(i * 0.167, j * 0.167, temperature[i][j] / 40);
             glVertex3d(i * 0.167 + 0.167, j * 0.167, temperature[i+1][j] / 40);
             glVertex3d(i * 0.167 + 0.167, j * 0.167 + 0.167, temperature[i+1][j+1] / 40);
